@@ -45,3 +45,4 @@ print("Total Gaji          : ",total_gaji)
 print("Pajak               : ",pajak)
 print("Gaji bersih         : ",gaji_bersih)
   
+ 
