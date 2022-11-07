@@ -1,0 +1,47 @@
+print("Program menghitung gaji karyawan bedasarkan golongan ")
+
+print("Golongan 1 = 50.000")
+print("Golongan 2 = 100.000")
+print("Golongan 3 = 150.000")
+
+golongan = int(input("Inputkan golongan anda : "))
+
+
+if golongan == 1 :
+        biaya = 50000
+
+elif golongan == 2 :
+        biaya = 100000
+
+elif golongan == 3 : 
+        biaya = 150000
+else :
+    print("Masukan golongan anda dengan benar!")
+
+jam_kerja = int(input("Inputkan jumlah jam kerja : "))
+
+if jam_kerja > 20 :
+     gaji = (jam_kerja - 20) * 3000 + ( 20 * 2000)
+     total_gaji = biaya + gaji
+
+elif jam_kerja > 0 and jam_kerja < 21 : 
+    gaji  = jam_kerja * 2000
+    total_gaji = biaya + gaji
+else:
+    print("Anda sebenarnya bekerja atau bukan!")
+             
+if total_gaji > 500000:
+    pajak = total_gaji * 0.1
+else:
+    pajak = 0    
+
+gaji_bersih = total_gaji + pajak
+
+print("Golongan nya adalah : ",golongan)
+print("Jumlah jam kerja    : ",jam_kerja)
+print("biaya pokok         : ",biaya)
+print("Gaji                : ",gaji)
+print("Total Gaji          : ",total_gaji)
+print("Pajak               : ",pajak)
+print("Gaji bersih         : ",gaji_bersih)
+  
